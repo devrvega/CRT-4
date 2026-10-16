@@ -1,0 +1,116 @@
+# the manual's screenshots (tools/manual_shots.sh): the NES's power-on and demo, its pages, the shelf, then
+# every console playing its demo
+wait 400
+shot screen-boot.png
+wait 2300
+tap PLAY
+wait 2000
+shot screen-nes.png
+turn ALGO -1
+wait 600
+shot screen-drums.png
+turn ALGO 1
+tap HOME
+wait 500
+shot screen-patterns.png
+tap HOME
+tap SEQ
+key w2 down
+spin K1 3
+wait 400
+shot screen-step.png
+key w2 up
+tap SEQ
+tap ENV
+wait 500
+shot screen-track.png
+tap ENV
+tap ARP
+wait 500
+shot screen-chords.png
+tap ARP
+tap SEL
+wait 500
+shot screen-mixer.png
+tap SEL
+tap FX
+key w13 down
+wait 600
+shot screen-fx.png
+key w13 up
+tap FX
+tap GLO
+wait 500
+shot screen-setup.png
+tap GLO
+press HOME
+wait 1100
+shot screen-help.png
+release HOME
+tap PLAY
+press GLO
+turn ALGO -2
+wait 300
+shot screen-shelf.png
+release GLO
+wait 2400
+tap PLAY
+wait 2200
+shot screen-2600.png
+tap PLAY
+press GLO
+turn ALGO 1
+release GLO
+wait 2400
+tap PLAY
+wait 2200
+shot screen-c64.png
+tap PLAY
+press GLO
+turn ALGO 2
+release GLO
+wait 2400
+tap PLAY
+wait 2200
+shot screen-pce.png
+tap PLAY
+press GLO
+turn ALGO 1
+release GLO
+wait 2400
+tap PLAY
+wait 2200
+shot screen-genesis.png
+tap PLAY
+press GLO
+turn ALGO 1
+release GLO
+wait 2400
+tap PLAY
+wait 2200
+shot screen-gameboy.png
+tap PLAY
+press GLO
+turn ALGO 1
+release GLO
+wait 2400
+tap PLAY
+wait 2200
+shot screen-snes.png
+tap PLAY
+press GLO
+turn ALGO 1
+release GLO
+wait 2400
+tap PLAY
+wait 2200
+shot screen-ps1.png
+tap PLAY
+press GLO
+turn ALGO 1
+release GLO
+wait 2400
+tap PLAY
+wait 2200
+shot screen-n64.png
+tap PLAY

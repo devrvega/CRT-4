@@ -1,0 +1,132 @@
+# CRT-4: the consoles. The shelf (GLO + ALGORITHM), each console with its own song (kept when you go to another
+# and back, and after a restart), the console remembered, every console's pages drawn, its demo playing.
+wait 400
+expect con 2
+expect glob_con 2
+shot nes.png
+# the NES's song changed: the tempo up four
+press HOME
+turn SELECT 4
+release HOME
+expect par0 154
+# the shelf: GLO held, ALGORITHM turned; nothing changes until GLO is let go
+press GLO
+turn ALGO 3
+expect con 2
+shot shelf.png
+release GLO
+wait 100
+expect con 5
+expect glob_con 5
+# the Game Boy: its own demo, its own tempo
+wait 2500
+expect par0 140
+shot gb.png
+press HOME
+turn SELECT -2
+release HOME
+expect par0 138
+# back to the NES: its song as it was left
+press GLO
+turn ALGO -3
+release GLO
+wait 2500
+expect con 2
+expect par0 154
+# and the Game Boy's, as it was left
+press GLO
+turn ALGO 3
+release GLO
+wait 2500
+expect con 5
+expect par0 138
+# a restart: the console, and its song, remembered
+tap SAVE
+expect dirty 0
+reboot
+wait 300
+expect con 5
+expect par0 138
+# GLO alone is still the Setup page
+tap GLO
+expect view 7
+tap GLO
+expect view 2
+# every console: its power-on, its demo playing, its pages
+press GLO
+turn ALGO -5
+release GLO
+wait 2400
+expect con 0
+tap PLAY
+wait 2000
+shot c0.png
+tap FX
+shot c0_fx.png
+tap FX
+tap PLAY
+press GLO
+turn ALGO 1
+release GLO
+wait 2400
+expect con 1
+tap PLAY
+wait 2000
+shot c1.png
+tap PLAY
+press GLO
+turn ALGO 2
+release GLO
+wait 2400
+expect con 3
+tap PLAY
+wait 2000
+shot c3.png
+tap PLAY
+press GLO
+turn ALGO 1
+release GLO
+wait 2400
+expect con 4
+tap PLAY
+wait 2000
+shot c4.png
+tap ENV
+shot c4_track.png
+tap ENV
+tap PLAY
+press GLO
+turn ALGO 2
+release GLO
+wait 2400
+expect con 6
+tap PLAY
+wait 2000
+shot c6.png
+tap FX
+shot c6_fx.png
+tap FX
+tap PLAY
+press GLO
+turn ALGO 1
+release GLO
+wait 2400
+expect con 7
+tap PLAY
+wait 2000
+shot c7.png
+tap FX
+shot c7_fx.png
+tap FX
+tap PLAY
+press GLO
+turn ALGO 1
+release GLO
+wait 2400
+expect con 8
+tap PLAY
+wait 2000
+shot c8.png
+tap PLAY
+until playing 0 1000
+expect peak_db_max 0
