@@ -28,7 +28,7 @@ jobs:
           path: |
             build/host/*.log
             build/scenarios/
-      - name: The firmware (a development build, identity FM-1_400)
+      - name: The firmware (a development build, identity FM-1_200)
         uses: actions/upload-artifact@v7
         with:
           name: crt4-dev-${{ github.sha }}

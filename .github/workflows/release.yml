@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 # A tag vX.Y.Z makes a release: the tests on a development build, then the release build (identity
-# FM-1_4XXYYZZ, the version on the FM-1's screen), and a GitHub release with crt4-X.Y.Z.fwsc and its notes
+# FM-1_2XXYYZZ, the version on the FM-1's screen), and a GitHub release with crt4-X.Y.Z.fwsc and its notes
 # from CHANGELOG.md. The Pages workflow then puts the site up for it.
 #   git tag v0.2.0 && git push origin v0.2.0
 name: Release

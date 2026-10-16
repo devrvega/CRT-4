@@ -2,6 +2,12 @@
 
 Each release's notes come from its section here (`tools/release_notes.py`). The newest is first.
 
+## 0.1.1 — 2026-10-16
+
+- **The site:** the browser emulator, the web installer and the manual are published with this release.
+  0.1.0's site builder still looked for LCD-4's identity and stopped. The firmware is 0.1.0's, apart from its
+  version.
+
 ## 0.1.0 — 2026-10-16
 
 The first release.

@@ -243,7 +243,7 @@ def main():
     title, what = (f"{NAME} Manual", "The manual") if not h1 or h1.group(1) == NAME else (f"{NAME}: {h1.group(1)}", h1.group(1))
     body = convert(md)
     page = (f"<title>{html.escape(title)}</title>\n"
-            f'<meta name="description" content="{html.escape(what)} for {NAME}, a four-track groovebox firmware for the M-VAVE FM-1 that plays nine consoles' sound chips.">\n'
+            f'<meta name="description" content="{html.escape(what)} for {NAME}, a four-track groovebox firmware for the M-VAVE FM-1 that plays the sound chips of nine consoles.">\n'
             f"<style>{CSS}</style>\n<main>\n{body}\n</main>\n")
     if not fragment:
         head, _, rest = page.partition("<main>")
