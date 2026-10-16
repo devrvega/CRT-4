@@ -135,9 +135,7 @@ static void gen_frame(sv_t *v)
         float base = mtof(note) / sr;
         int kc = gn_keycode(note);
         float det = has_kt(v->d, KT_DETUNE) ? kv(v, KT_DETUNE, 0.0f) : 0.0f;
-        gen_setup(v);
-        if (has_kt(v->d, KT_VIB) || p->fms)     /* the LFO's vibrato comes through the driver's (a frame) */
-            ;
+        gen_setup(v);                           /* (the LFO's vibrato comes through the driver's, a frame) */
         for (k = 0; k < 4; k++) {
             const fm_op_t *o = &p->op[k];
             float r = o->r16 ? (float)o->r16 * (1.0f / 16.0f) : (o->mul ? (float)o->mul : 0.5f);

@@ -27,7 +27,6 @@ typedef struct {
 
 static const uint16_t SID_ATT_MS[16] = {2, 8, 16, 24, 38, 56, 68, 80, 100, 250, 500, 800, 1000, 3000, 5000, 8000};
 static int sid_8580;
-static float sid_clock = 985248.0f;
 
 static void sid_init(void) {}
 static void sid_control(void)
