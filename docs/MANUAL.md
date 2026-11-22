@@ -219,7 +219,7 @@ another. The closed hat cuts the open one off. Each console's kits are in sectio
 On tracks 2–4, the **Steps page** (SEQ) turns the white keys into its 16 steps.
 
 - Press an empty step: it takes **the notes in hand**, what you last played on the keys (a chord, if you
-  played one), one step long. Stopped, you hear it.
+  played one), one step long. Stopped, you hear it for a moment (a third of a second).
 - Press a full step: it's cleared.
 - **Hold a step and turn the knobs:** KNOB 1 its note (a chord moves together), KNOB 2 its length (in
   quarter steps, up to 16 steps), KNOB 3 and 4 the sound's A and B for that step alone (a lock).
