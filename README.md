@@ -10,6 +10,9 @@ sounds on the other three, made the way that console made them, with its own ech
 screen dresses as that console, with a scene of its time that moves with the music. Each console keeps its
 own song.
 
+**Version 1.0** is the first release marked production ready. What changed in each release is in the
+[changelog](CHANGELOG.md).
+
 ![CRT-4 on the FM-1's screen: the 2600, the C64, the NES, the PC Engine, the Genesis, the Game Boy, the SNES, the PlayStation and the N64](docs/img/crt4.gif)
 
 | | |
